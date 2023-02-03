@@ -309,8 +309,8 @@ class _AnimateState extends State<Animate> with SingleTickerProviderStateMixin {
       _controller.animateTo(pos);
     } else if (_adapter == null) {
       _controller.forward(from: 0);
-      widget.onPlay?.call(_controller);
     }
+    widget.onPlay?.call(_controller);
   }
 
   @override
